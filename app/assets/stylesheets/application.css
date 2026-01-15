@@ -8,3 +8,45 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+.icon::before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.card {
+  padding: 25px 20px;
+  max-width: 500px;
+  background-color: #f2f2f2;
+}
+
+a {
+  color: #3486eb;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #2663ad;
+}
+
+.fa-solid {
+  font-weight: 900;
+  color: #3486eb;
+}
+
+.fa-solid:hover {
+  color: #2663ad;
+}
+
+.container {
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.btn-icon {
+  color: black;
+}

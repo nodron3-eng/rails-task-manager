@@ -1,0 +1,15 @@
+<div class="container">
+  <%= form_with model: @task do |f| %>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+    <%= f.label :details %>
+    <%= f.text_field :details %>
+    <%= form_with model: @task do |f| %>
+      <%= f.check_box :completed %>
+      Completed
+      <%= f.submit "Save" %>
+    <% end %>
+  <% end %>
+
+  <hr>
+</div>

@@ -1,0 +1,22 @@
+<div class="container">
+  <h1><%= @task.title %></h1>
+  <%= link_to edit_task_path(@task),
+            class: "btn btn-outline-secondary" do %>
+    <i class="fa-solid fa-pencil btn-icon"></i>
+    Edit task
+  <% end %>
+
+  <p class="card"><%= @task.details %></p>
+
+  <div class="input-group">
+    <li>
+      <input type="checkbox" <%= "checked" if @task.completed %>>
+      <% task_completed = "The task is completed" %>
+      <% task_todo = "This task is not completed" %>
+      <label class="form-check-label"><%= task_completed if @task.completed %></label>
+      <label class="form-check-label"><%= task_todo if @task.completed == false %></label>
+    </li>
+  </div>
+  <hr>
+  <%= link_to "Back to list", tasks_path %>
+</div>
